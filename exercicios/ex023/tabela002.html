@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        
+        .pos {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th, tfoot {
+            background-color: #383838;
+            color: white;
+        }
+
+        thead > tr > th { /* cabeçalho fixo*/
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+        tbody > tr:nth-child(odd) { /* 2n-1*/
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) { /* 2n*/
+            background-color: lightgray;
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- 
+        Anatomia para tabelas grandes:
+        table
+        Caption    
+            thead
+                tr, td, th
+            tbody
+                tr, td, th
+            tfoot
+                tr, td, th
+    -->
+
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <th scope="col" style="width: 50px;">Posição</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">População</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="pos">1</td>
+                <td>São Paulo</td>
+                <td class="num">44.411.238</td>
+            </tr>
+            <tr>
+                <td class="pos">2</td>
+                <td>Minas Gerais</td>
+                <td class="num">20.538.718</td>
+            </tr>
+            <tr>
+                <td class="pos">3</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">16.054.524</td>
+            </tr>
+            <tr>
+                <td class="pos">4</td>
+                <td>Bahia</td>
+                <td class="num">14.141.626</td>
+            </tr>
+            <tr>
+                <td class="pos">5</td>
+                <td>Paraná</td>
+                <td class="num">11.444.380</td>
+            </tr>
+            <tr>
+                <td class="pos">6</td>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10.882.965</td>	
+            </tr>
+            <tr>
+                <td class="pos">7</td>
+                <td>Pernambuco</td>
+                <td class="num">9.058.931</td>
+            </tr>
+            <tr>
+                <td class="pos">8</td>
+                <td>Ceará</td>
+                <td class="num">8.794.957</td>
+            </tr>
+            <tr>
+                <td class="pos">9</td>
+                <td>Pará</td>	
+                <td class="num">8.121.025</td>	
+            </tr>
+            <tr>
+                <td class="pos">10</td>
+                <td>Santa Catarina</td>
+                <td class="num">7.610.361</td>	
+            </tr>
+            <tr>
+                <td class="pos">11</td>
+                <td>Goiás</td>	
+                <td class="num">7.056.495</td>
+            </tr>
+            <tr>
+                <td class="pos">12</td>
+                <td>Maranhão</td>	
+                <td class="num">6.775.805</td>
+            </tr>
+            <tr>
+                <td class="pos">13</td>
+                <td>Paraíba</td>	
+                <td class="num">3.974.687</td>
+            </tr>
+            <tr>
+                <td class="pos">14</td>
+                <td>Amazonas</td>	
+                <td class="num">3.941.613</td>
+            </tr>
+            <tr>
+                <td class="pos">15</td>
+                <td>Espírito Santo</td>	
+                <td class="num">3.833.712</td>	
+            </tr>
+            <tr>
+                <td class="pos">16</td>
+                <td>Mato Grosso</td>	
+                <td class="num">3.658.649</td>
+            </tr>
+            <tr>
+                <td class="pos">17</td>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.302.729</td>
+            </tr>
+            <tr>
+                <td class="pos">18</td>
+                <td>Piauí</td>	
+                <td class="num">3.272.199</td>
+            </tr>
+            <tr>
+                <td class="pos">19</td>
+                <td>Alagoas</td>	
+                <td class="num">3.127.683</td>
+            </tr>
+            <tr>
+                <td class="pos">20</td>
+                <td>Distrito Federal</td>	
+                <td class="num">2.817.381</td>
+            </tr>
+            <tr>
+                <td class="pos">21</td>
+                <td>Mato Grosso do Sul</td>	
+                <td class="num">2.757.013</td>
+            </tr>
+            <tr>
+                <td class="pos">22</td>
+                <td>Sergipe</td>
+                <td class="num">2.209.558</td>
+            </tr>
+            <tr>
+                <td class="pos">23</td>
+                <td>Rondônia</td>	
+                <td class="num">1.581.196</td>
+            </tr>
+            <tr>
+                <td class="pos">24</td>
+                <td>Tocantins</td>	
+                <td class="num">1.511.460</td>
+            </tr>
+            <tr>
+                <td class="pos">25</td>
+                <td>Acre</td>	
+                <td class="num">830.018</td>
+            </tr>
+            <tr>
+                <td class="pos">26</td>
+                <td>Amapá</td>	
+                <td class="num">733.759</td>
+            </tr>
+            <tr>
+                <td class="pos">27</td>
+                <td>Roraima</td>	
+                <td class="num">636.707</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th style="background-color: white; border: none;"></th>
+                <th scope="row">Total de habitantes</th>
+                <td class="num"><strong>203.079.389</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic deleniti debitis voluptas saepe dolore ipsam consequatur accusantium illo alias perspiciatis veniam vitae, tempora odio, quis minus facilis. Velit veniam deserunt voluptatibus quia nobis ad est numquam impedit quasi beatae! Illo ullam mollitia natus debitis eveniet in laudantium porro eos. Quod itaque recusandae ducimus cupiditate quaerat, necessitatibus hic labore obcaecati, minus dolores repellat nulla dolorum quam in eum. Placeat sit ducimus odio itaque. Eius cum quasi asperiores quo obcaecati officiis? Sit obcaecati debitis ea accusamus voluptatibus, quibusdam at quaerat repellat, reiciendis dicta praesentium cumque cum, amet commodi minima minus illum tempora!
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, placeat, magni, culpa distinctio delectus est hic error fugiat obcaecati laborum necessitatibus consequuntur quam et porro quia aliquid labore! Aliquam doloremque itaque ad fugiat eos, accusantium vero velit rerum facilis laudantium esse autem ex minima ratione, alias dolore deleniti numquam distinctio sunt inventore? Distinctio dolor ipsum nostrum amet iure aliquid nulla eius quisquam illum repudiandae! Laborum libero ipsam voluptates reiciendis unde repellendus consequatur velit, quibusdam eaque? Soluta beatae sit et reiciendis molestiae fuga, deserunt, magnam, nemo reprehenderit sed recusandae atque id illo voluptatum possimus incidunt omnis officiis maxime optio. Quae, culpa.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic deleniti debitis voluptas saepe dolore ipsam consequatur accusantium illo alias perspiciatis veniam vitae, tempora odio, quis minus facilis. Velit veniam deserunt voluptatibus quia nobis ad est numquam impedit quasi beatae! Illo ullam mollitia natus debitis eveniet in laudantium porro eos. Quod itaque recusandae ducimus cupiditate quaerat, necessitatibus hic labore obcaecati, minus dolores repellat nulla dolorum quam in eum. Placeat sit ducimus odio itaque. Eius cum quasi asperiores quo obcaecati officiis? Sit obcaecati debitis ea accusamus voluptatibus, quibusdam at quaerat repellat, reiciendis dicta praesentium cumque cum, amet commodi minima minus illum tempora!
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, placeat, magni, culpa distinctio delectus est hic error fugiat obcaecati laborum necessitatibus consequuntur quam et porro quia aliquid labore! Aliquam doloremque itaque ad fugiat eos, accusantium vero velit rerum facilis laudantium esse autem ex minima ratione, alias dolore deleniti numquam distinctio sunt inventore? Distinctio dolor ipsum nostrum amet iure aliquid nulla eius quisquam illum repudiandae! Laborum libero ipsam voluptates reiciendis unde repellendus consequatur velit, quibusdam eaque? Soluta beatae sit et reiciendis molestiae fuga, deserunt, magnam, nemo reprehenderit sed recusandae atque id illo voluptatum possimus incidunt omnis officiis maxime optio. Quae, culpa.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic deleniti debitis voluptas saepe dolore ipsam consequatur accusantium illo alias perspiciatis veniam vitae, tempora odio, quis minus facilis. Velit veniam deserunt voluptatibus quia nobis ad est numquam impedit quasi beatae! Illo ullam mollitia natus debitis eveniet in laudantium porro eos. Quod itaque recusandae ducimus cupiditate quaerat, necessitatibus hic labore obcaecati, minus dolores repellat nulla dolorum quam in eum. Placeat sit ducimus odio itaque. Eius cum quasi asperiores quo obcaecati officiis? Sit obcaecati debitis ea accusamus voluptatibus, quibusdam at quaerat repellat, reiciendis dicta praesentium cumque cum, amet commodi minima minus illum tempora!
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, placeat, magni, culpa distinctio delectus est hic error fugiat obcaecati laborum necessitatibus consequuntur quam et porro quia aliquid labore! Aliquam doloremque itaque ad fugiat eos, accusantium vero velit rerum facilis laudantium esse autem ex minima ratione, alias dolore deleniti numquam distinctio sunt inventore? Distinctio dolor ipsum nostrum amet iure aliquid nulla eius quisquam illum repudiandae! Laborum libero ipsam voluptates reiciendis unde repellendus consequatur velit, quibusdam eaque? Soluta beatae sit et reiciendis molestiae fuga, deserunt, magnam, nemo reprehenderit sed recusandae atque id illo voluptatum possimus incidunt omnis officiis maxime optio. Quae, culpa.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic deleniti debitis voluptas saepe dolore ipsam consequatur accusantium illo alias perspiciatis veniam vitae, tempora odio, quis minus facilis. Velit veniam deserunt voluptatibus quia nobis ad est numquam impedit quasi beatae! Illo ullam mollitia natus debitis eveniet in laudantium porro eos. Quod itaque recusandae ducimus cupiditate quaerat, necessitatibus hic labore obcaecati, minus dolores repellat nulla dolorum quam in eum. Placeat sit ducimus odio itaque. Eius cum quasi asperiores quo obcaecati officiis? Sit obcaecati debitis ea accusamus voluptatibus, quibusdam at quaerat repellat, reiciendis dicta praesentium cumque cum, amet commodi minima minus illum tempora!
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, placeat, magni, culpa distinctio delectus est hic error fugiat obcaecati laborum necessitatibus consequuntur quam et porro quia aliquid labore! Aliquam doloremque itaque ad fugiat eos, accusantium vero velit rerum facilis laudantium esse autem ex minima ratione, alias dolore deleniti numquam distinctio sunt inventore? Distinctio dolor ipsum nostrum amet iure aliquid nulla eius quisquam illum repudiandae! Laborum libero ipsam voluptates reiciendis unde repellendus consequatur velit, quibusdam eaque? Soluta beatae sit et reiciendis molestiae fuga, deserunt, magnam, nemo reprehenderit sed recusandae atque id illo voluptatum possimus incidunt omnis officiis maxime optio. Quae, culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit odit ad dolorum perspiciatis sunt a minus officia, reiciendis sequi modi voluptas assumenda magnam impedit harum deleniti atque sit reprehenderit quod!
+    </p>
+</body>
+</html>
