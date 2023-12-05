@@ -8,3 +8,5 @@
 <a href="https://celmarpa.github.io/projeto-android/" target="_blank">Exercutar o projeto android</a>
 
 <a href="https://celmarpa.github.io/projeto-cordel/" target="_blank">Exercutar o projeto cordel moderno</a>
+
+<a href="https://celmarpa.github.io/projeto-social/" target="_blank">Exercutar o projeto redes sociais</a>
